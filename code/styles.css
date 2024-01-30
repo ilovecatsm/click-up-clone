@@ -99,10 +99,17 @@ input:focus {
   padding: 5px;
 }
 .sign {
-  color: rgb(152, 137, 240);
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  left: 40%;
   text-decoration: none;
-  font-size: 15px;
-  padding: 15px;
+  color: rgb(152, 137, 240);
+  width: fit-content;
+  height: fit-content;
+}
+.sign:hover {
+  border-bottom: dashed 1px rgb(152, 137, 240);
 }
 h1,
 .sign,
@@ -116,4 +123,10 @@ h1,
   font-size: 20px;
   padding: 8px;
   margin-left: 5px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
