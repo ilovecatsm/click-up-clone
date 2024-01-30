@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
   </head>
   <!-- ACTUAL PAGE STUFF -->
@@ -28,28 +26,46 @@
     <div class="container">
       <h1>Let's go!</h1>
       <!-- name -->
-      <i class="fa fa-user-o"></i>
-      <label for="fullname">Full Name</label>
-      <input type="text" placeholder="John Doe" />
+      <label for="fullname"> Full Name</label>
+      <i class="bi bi-person"></i>
+      <input type="text" placeholder="John Doe" required />
+      <!-- name error text -->
+      <p class="errortext">
+        <i class="bi bi-exclamation-triangle"></i> Full name required!
+      </p>
+
       <!-- email -->
-      <i class="fa fa-envelope-o"></i>
       <label for="email">Email</label>
-      <input type="email" placeholder="example@gmail.com" />
+      <i class="bi bi-envelope"></i>
+      <input type="email" placeholder="example@gmail.com" required />
+      <!-- email error text -->
+      <p class="errortext">
+        <i class="bi bi-exclamation-triangle"></i>Email required!
+      </p>
+
       <!-- password -->
       <label for="password">Choose Password</label>
+      <i class="bi bi-lock"></i>
       <input
         type="password"
         name="password"
         placeholder="Minimum 8 characters"
+        required
       />
+      <!-- password error text -->
+      <p class="errortext">
+        <i class="bi bi-exclamation-triangle"></i>Password required!
+      </p>
+
       <!-- button -->
       <button>Play with ClickUp</button>
       <p>or sign up with SSO</p>
       <p class="terms">
         By clicking the button above, you agree to our
-        <a>Terms of Services</a> and <a>Policies</a>
+        <a href="">Terms of Services</a> and <a href="">Policies</a>
       </p>
     </div>
+    <p class="cta">See why 1,000,000+ teams are more productive with ClickUp</p>
     <script src="script.js" async defer></script>
   </body>
 </html>
