@@ -11,8 +11,8 @@ body {
 .nav {
   display: flex;
   flex-direction: row;
-  margin: 15px;
-  padding: 20px;
+  margin: 20px;
+  padding: 15px;
 }
 label,
 h1 {
@@ -22,24 +22,33 @@ h1 {
   font-weight: bold;
 }
 button {
-  background-color: rgb(129, 62, 216);
+  background-color: rgb(121, 102, 229);
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .top {
-  top: 30%;
-  right: 30%;
+  top: 30px;
+  right: 1.5%;
   display: flex;
   font-weight: 600;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
 }
 .top p {
   font-size: 14px;
+  padding-right: 25px;
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.login {
+  font-weight: 785;
+  width: 80px;
+  height: 40px;
 }
