@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+.logo {
+  width: 124px;
+  height: auto;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  padding: 20px;
+}
+label,
+h1 {
+  color: rgb(9, 9, 9);
+}
+h1 {
+  font-weight: bold;
+}
+button {
+  background-color: rgb(129, 62, 216);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.top {
+  top: 30%;
+  right: 30%;
+  display: flex;
+  font-weight: 600;
+}
+.top p {
+  font-size: 14px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
