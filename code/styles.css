@@ -27,12 +27,16 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: -2px 8px 32px -8px rgb(121, 102, 229);
+  transition: 0.3s;
+}
+button:hover {
+  background: rgb(91, 51, 223);
 }
 .top {
   top: 30px;
   right: 1.5%;
   display: flex;
-  font-weight: 600;
   position: fixed;
   justify-content: center;
   align-items: center;
@@ -43,9 +47,33 @@ button {
 }
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  background-color: white;
+  box-shadow: -2px 8px 32px -8px rgb(160, 160, 160);
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+input {
+  padding: 15px;
+  border-radius: 10px;
+  outline: 1.5px solid lightgrey;
+  border: none;
+  transition: 0.1s ease-in;
+}
+input:hover {
+  outline: 1.5px solid rgb(148, 146, 146);
+}
+input:focus {
+  outline: 1.5px solid rgb(148, 146, 146);
+}
+.terms {
+  font-size: 10px;
+  color: grey;
+}
+.terms a {
+  color: rgb(101, 101, 101);
 }
 .login {
   font-weight: 785;
