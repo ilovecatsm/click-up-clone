@@ -42,16 +42,19 @@ button:hover {
   font-size: 14px;
   padding-right: 25px;
 }
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container {
   display: flex;
   flex-direction: column;
   background-color: white;
   box-shadow: -2px 8px 32px -8px rgb(160, 160, 160);
-  width: 500px;
+  width: 400px;
   height: auto;
   border-radius: 10px;
-  position: relative;
-  flex-grow: 1;
   padding: 30px 60px;
 }
 .container button {
@@ -77,6 +80,7 @@ input:focus {
 .terms {
   font-size: 10px;
   color: grey;
+  padding: 5px;
 }
 .terms a {
   color: rgb(101, 101, 101);
@@ -93,7 +97,7 @@ input:focus {
 }
 .errortext {
   color: rgb(216, 15, 15);
-  font-size: 13px;
+  font-size: 10px;
 }
 .errortext i {
   padding: 5px;
@@ -101,15 +105,11 @@ input:focus {
 .sign {
   font-size: 13px;
   text-align: center;
-  position: relative;
-  left: 40%;
   text-decoration: none;
   color: rgb(152, 137, 240);
-  width: fit-content;
-  height: fit-content;
 }
 .sign:hover {
-  border-bottom: dashed 1px rgb(152, 137, 240);
+  border-bottom: dashed 1.5px rgb(152, 137, 240);
 }
 h1,
 .sign,
@@ -129,4 +129,10 @@ h1,
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+label {
+  align-self: flex-start;
+  padding-left: 75px;
+  font-size: 12px;
+  padding-bottom: 10px;
 }
