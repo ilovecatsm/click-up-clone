@@ -30,6 +30,24 @@ button {
 button:hover {
   background: rgb(91, 51, 223);
 }
+.google {
+  padding: 15px;
+}
+.google-logo {
+  width: 6%;
+  height: auto;
+  margin-right: auto;
+}
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(50, 50, 50);
+  background: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-weight: bold;
+}
 .top {
   top: 30px;
   right: 1.5%;
@@ -46,16 +64,18 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 70px;
 }
 .container {
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: -2px 8px 32px -8px rgb(160, 160, 160);
-  width: 400px;
+  box-shadow: 0 24px 64px #26214a1a;
+  width: 365px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 30px 60px;
+  position: relative;
 }
 .container button {
   width: 360px;
@@ -80,7 +100,6 @@ input:focus {
 .terms {
   font-size: 10px;
   color: grey;
-  padding: 5px;
 }
 .terms a {
   color: rgb(101, 101, 101);
@@ -94,10 +113,13 @@ input:focus {
   color: rgba(149, 108, 108, 0.355);
   font-size: 13px;
   font-weight: bold;
+  padding-top: 10px;
 }
 .errortext {
   color: rgb(216, 15, 15);
   font-size: 10px;
+  align-self: flex-start;
+  padding-left: 5px;
 }
 .errortext i {
   padding: 5px;
@@ -107,6 +129,7 @@ input:focus {
   text-align: center;
   text-decoration: none;
   color: rgb(152, 137, 240);
+  margin: 0;
 }
 .sign:hover {
   border-bottom: dashed 1.5px rgb(152, 137, 240);
@@ -132,7 +155,15 @@ h1,
 }
 label {
   align-self: flex-start;
-  padding-left: 75px;
+  padding-left: 5px;
   font-size: 12px;
   padding-bottom: 10px;
+}
+.sign,
+.terms {
+  padding-top: 20px;
+}
+.help {
+  padding: 15px;
+  margin-top: auto;
 }
